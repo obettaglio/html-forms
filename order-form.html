@@ -32,7 +32,7 @@
         </tr>
     </table>
     <p>Place your orders here! You know you want to.</p>
-    <form action="https://ubermelon-order-form.herokuapp.com/process" method="GET">
+    <form action="https://ubermelon-order-form.herokuapp.com/process" method="POST">
         First Name: <input type="text" name="firstname"><br>
         Last Name: <input type="text" name="lastname"><br>
         Melon Type:
@@ -46,13 +46,13 @@
         <br>
         Quantity: <input type="text" name="quantity"><br>
         Delivery Time: 
-            <input type="radio" name="ampm" value="am">AM
-            <input type="radio" name="ampm" value="pm">PM
-            <input type="radio" name="ampm" value="wat">Time is irrelevant
+            <input type="radio" name="time" value="am">AM
+            <input type="radio" name="time" value="pm">PM
+            <input type="radio" name="time" value="wat">Time is irrelevant
         <br>
         Returning Customer?
-            <input type="radio" name="yesno" value="yes">Yes
-            <input type="radio" name="yesno" value="no">No
+            <input type="radio" name="returning" value="yes">Yes
+            <input type="radio" name="returning" value="no">No
         <br>
         Statistics: 
             <input type="checkbox" name="stats" value="dog">Dog
@@ -61,8 +61,8 @@
             <input type="checkbox" name="stats" value="balloonicorn">Balloonicorn
             <input type="checkbox" name="stats" value="yak">Yak
         <br>
-        <input type="submit">
+        <input type="submit" value="Click to order">
     </form>
-
+    <p>*Quantities given are by the flat.</p>
 </body>
 </html>
